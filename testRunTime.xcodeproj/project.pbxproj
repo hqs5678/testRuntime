@@ -64,6 +64,8 @@
 		4DDAEE531C9E79040036A302 /* testRunTime */ = {
 			isa = PBXGroup;
 			children = (
+				4DDAEE711C9E82970036A302 /* 动态添加属性 */,
+				4DDAEE721C9E82AE0036A302 /* 显示大图片 */,
 				4DDAEE571C9E79040036A302 /* AppDelegate.h */,
 				4DDAEE581C9E79040036A302 /* AppDelegate.m */,
 				4DDAEE5A1C9E79040036A302 /* ViewController.h */,
@@ -73,10 +75,6 @@
 				4DDAEE621C9E79040036A302 /* LaunchScreen.storyboard */,
 				4DDAEE651C9E79040036A302 /* Info.plist */,
 				4DDAEE541C9E79040036A302 /* Supporting Files */,
-				4DDAEE6B1C9E792E0036A302 /* Student.h */,
-				4DDAEE6C1C9E792E0036A302 /* Student.m */,
-				4DDAEE6E1C9E82540036A302 /* UIViewController+ImageView.h */,
-				4DDAEE6F1C9E82540036A302 /* UIViewController+ImageView.m */,
 			);
 			path = testRunTime;
 			sourceTree = "<group>";
@@ -87,6 +85,24 @@
 				4DDAEE551C9E79040036A302 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4DDAEE711C9E82970036A302 /* 动态添加属性 */ = {
+			isa = PBXGroup;
+			children = (
+				4DDAEE6B1C9E792E0036A302 /* Student.h */,
+				4DDAEE6C1C9E792E0036A302 /* Student.m */,
+			);
+			name = "动态添加属性";
+			sourceTree = "<group>";
+		};
+		4DDAEE721C9E82AE0036A302 /* 显示大图片 */ = {
+			isa = PBXGroup;
+			children = (
+				4DDAEE6E1C9E82540036A302 /* UIViewController+ImageView.h */,
+				4DDAEE6F1C9E82540036A302 /* UIViewController+ImageView.m */,
+			);
+			name = "显示大图片";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
