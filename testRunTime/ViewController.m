@@ -24,9 +24,9 @@
     
     
     Student *stu = [[Student alloc]init];
-    [stu setDesc:@"fjdsajfdsjafjdskajfkldsjfkldasjfkldjsafjds"];
+    [stu setExtInfo:@"hahahhahahahahah"];
     
-    NSLog(@"stu : %@",[stu stuDesc]);
+    NSLog(@"stu : %@",[stu extInfo]);
 }
 
 - (void)didReceiveMemoryWarning {

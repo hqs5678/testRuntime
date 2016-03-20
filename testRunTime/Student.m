@@ -11,12 +11,14 @@
 
 @implementation Student
 
-char extInfo;
+
+static char extInfo;
 
 - (instancetype)init{
     self = [super init];
     if (self) {
         
+        // 初始化
         objc_setAssociatedObject(self, &extInfo, @"test value", OBJC_ASSOCIATION_RETAIN_NONATOMIC);
         
         
@@ -26,13 +28,13 @@ char extInfo;
 }
 
 
-- (void)setDesc:(NSString *)desc{
-    objc_setAssociatedObject(self, &extInfo, desc, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+// 设置
+- (void)setExtInfo:(NSString *)info{
+    objc_setAssociatedObject(self, &extInfo, info, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 
-- (NSString *)stuDesc{
-    
+- (NSString *)extInfo{
     return [NSString stringWithFormat:@"extInfo:%@",objc_getAssociatedObject(self, &extInfo)];
 }
 
