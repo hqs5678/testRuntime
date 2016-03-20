@@ -15,6 +15,7 @@
 		4DDAEE641C9E79040036A302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAEE621C9E79040036A302 /* LaunchScreen.storyboard */; };
 		4DDAEE6D1C9E792E0036A302 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAEE6C1C9E792E0036A302 /* Student.m */; };
 		4DDAEE701C9E82540036A302 /* UIViewController+ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAEE6F1C9E82540036A302 /* UIViewController+ImageView.m */; };
+		4DE8F93E1C9E918D005BC8C9 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8F93D1C9E918D005BC8C9 /* NSObject+Property.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		4DDAEE6C1C9E792E0036A302 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		4DDAEE6E1C9E82540036A302 /* UIViewController+ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImageView.h"; sourceTree = "<group>"; };
 		4DDAEE6F1C9E82540036A302 /* UIViewController+ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImageView.m"; sourceTree = "<group>"; };
+		4DE8F93C1C9E918D005BC8C9 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
+		4DE8F93D1C9E918D005BC8C9 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,12 +67,13 @@
 		4DDAEE531C9E79040036A302 /* testRunTime */ = {
 			isa = PBXGroup;
 			children = (
+				4DE8F93B1C9E912C005BC8C9 /* 能够动态添加属性的NSObjec分类 终极解决方案 */,
 				4DDAEE711C9E82970036A302 /* 动态添加属性 */,
 				4DDAEE721C9E82AE0036A302 /* 显示大图片 */,
-				4DDAEE571C9E79040036A302 /* AppDelegate.h */,
-				4DDAEE581C9E79040036A302 /* AppDelegate.m */,
 				4DDAEE5A1C9E79040036A302 /* ViewController.h */,
 				4DDAEE5B1C9E79040036A302 /* ViewController.m */,
+				4DDAEE571C9E79040036A302 /* AppDelegate.h */,
+				4DDAEE581C9E79040036A302 /* AppDelegate.m */,
 				4DDAEE5D1C9E79040036A302 /* Main.storyboard */,
 				4DDAEE601C9E79040036A302 /* Assets.xcassets */,
 				4DDAEE621C9E79040036A302 /* LaunchScreen.storyboard */,
@@ -103,6 +107,15 @@
 				4DDAEE6F1C9E82540036A302 /* UIViewController+ImageView.m */,
 			);
 			name = "显示大图片";
+			sourceTree = "<group>";
+		};
+		4DE8F93B1C9E912C005BC8C9 /* 能够动态添加属性的NSObjec分类 终极解决方案 */ = {
+			isa = PBXGroup;
+			children = (
+				4DE8F93C1C9E918D005BC8C9 /* NSObject+Property.h */,
+				4DE8F93D1C9E918D005BC8C9 /* NSObject+Property.m */,
+			);
+			name = "能够动态添加属性的NSObjec分类 终极解决方案";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +192,7 @@
 				4DDAEE701C9E82540036A302 /* UIViewController+ImageView.m in Sources */,
 				4DDAEE591C9E79040036A302 /* AppDelegate.m in Sources */,
 				4DDAEE561C9E79040036A302 /* main.m in Sources */,
+				4DE8F93E1C9E918D005BC8C9 /* NSObject+Property.m in Sources */,
 				4DDAEE6D1C9E792E0036A302 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

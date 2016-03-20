@@ -27,6 +27,17 @@
     [stu setExtInfo:@"hahahhahahahahah"];
     
     NSLog(@"stu : %@",[stu extInfo]);
+    
+    
+    
+    
+    // 第二种方案
+    
+    [stu setValue:@"test undefinedKey" forKey:@"hah"];
+    
+    NSLog(@"undefinedKey : %@",[stu valueForKey:@"hah"]);
+    
+    
 }
 
 - (void)didReceiveMemoryWarning {
