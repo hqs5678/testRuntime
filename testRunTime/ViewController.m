@@ -9,7 +9,9 @@
 #import "ViewController.h"
 
 #import "Student.h"
+#import "UIImageView+BigImageView.h"
 
+#import "ECGViewController.h"
 
 
 
@@ -22,22 +24,39 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+//    
+//    Student *stu = [[Student alloc]init];
+//    [stu setExtInfo:@"hahahhahahahahah"];
+//    
+//    NSLog(@"stu : %@",[stu extInfo]);
+//    
+//    
+//    
+//    
+//    // 第二种方案
+//    
+//    [stu setValue:@"test undefinedKey" forKey:@"hah"];
+//    
+//    NSLog(@"undefinedKey : %@",[stu valueForKey:@"hah"]);
+//    
+//    
+//    UITapGestureRecognizer *recorgnizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap:)];
+//    [self.view addGestureRecognizer:recorgnizer];
     
-    Student *stu = [[Student alloc]init];
-    [stu setExtInfo:@"hahahhahahahahah"];
     
-    NSLog(@"stu : %@",[stu extInfo]);
-    
-    
-    
-    
-    // 第二种方案
-    
-    [stu setValue:@"test undefinedKey" forKey:@"hah"];
-    
-    NSLog(@"undefinedKey : %@",[stu valueForKey:@"hah"]);
-    
-    
+    UITapGestureRecognizer *recorgnizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap:)];
+    UIImageView *imgView = [[UIImageView alloc ]initWithFrame:CGRectMake(20, 40, 20, 20)];
+    imgView.image = [UIImage imageNamed:@"1.png"];
+    imgView.userInteractionEnabled = YES;
+    [self.view addSubview:imgView];
+    [imgView addGestureRecognizer:recorgnizer];
+}
+
+- (void)tap:(UITapGestureRecognizer *)recognizer{
+//    ECGViewController *vc = [[ECGViewController alloc]init];
+//    [self presentViewController:vc animated:YES completion:nil];
+
+    [((UIImageView *)recognizer.view) showFullScreenImage];
 }
 
 - (void)didReceiveMemoryWarning {

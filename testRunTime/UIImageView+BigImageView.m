@@ -1,20 +1,12 @@
 //
-//  UIViewController+ImageView.m
-//  problemfeedback
+//  UIImageView+BigImageView.m
+//  testRunTime
 //
-//  Created by hqs on 16/3/9.
+//  Created by hqs on 16/3/21.
 //  Copyright © 2016年 hqs. All rights reserved.
 //
 
-//
-//  UIViewController+Image.m
-//  problemfeedback
-//
-//  Created by hqs on 16/3/9.
-//  Copyright © 2016年 hqs. All rights reserved.
-//
-
-#import "UIViewController+ImageView.h"
+#import "UIImageView+BigImageView.h"
 
 
 #define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
@@ -47,19 +39,14 @@ static TmpHolder *sharedSingleton = nil;
 
 @end
 
-@interface UIViewController() <UIScrollViewDelegate>
-
-@end
-
-@implementation UIViewController (Image)
+@implementation UIImageView (BigImageView)
 
 
-// 显示大图片
--(void)showFullScreenImage:(UIImageView *)imgView{
-    UIImage *image=imgView.image;
+- (void)showFullScreenImage{
+    UIImage *image=self.image;
     UIWindow *window=[UIApplication sharedApplication].keyWindow;
     [TmpHolder sharedInstance].backgroundView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
-    [TmpHolder sharedInstance].oldframe=[imgView convertRect:imgView.bounds toView:window];
+    [TmpHolder sharedInstance].oldframe=[self convertRect:self.bounds toView:window];
     
     [TmpHolder sharedInstance].backgroundView.backgroundColor=[[UIColor lightGrayColor] colorWithAlphaComponent:0.5];
     [TmpHolder sharedInstance].backgroundView.alpha=0;
@@ -119,5 +106,4 @@ static TmpHolder *sharedSingleton = nil;
         }];
     }];
 }
-
 @end

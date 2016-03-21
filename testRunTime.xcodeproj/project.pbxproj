@@ -14,7 +14,10 @@
 		4DDAEE611C9E79040036A302 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAEE601C9E79040036A302 /* Assets.xcassets */; };
 		4DDAEE641C9E79040036A302 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DDAEE621C9E79040036A302 /* LaunchScreen.storyboard */; };
 		4DDAEE6D1C9E792E0036A302 /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAEE6C1C9E792E0036A302 /* Student.m */; };
-		4DDAEE701C9E82540036A302 /* UIViewController+ImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDAEE6F1C9E82540036A302 /* UIViewController+ImageView.m */; };
+		4DE5264E1C9F9C290085F12D /* ECGViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE5264D1C9F9C290085F12D /* ECGViewController.m */; };
+		4DE526511C9F9C9F0085F12D /* ECGView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE526501C9F9C9F0085F12D /* ECGView.m */; };
+		4DE526541C9FC4980085F12D /* UIImageView+BigImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE526531C9FC4980085F12D /* UIImageView+BigImageView.m */; };
+		4DE526561C9FC5B20085F12D /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DE526551C9FC5B20085F12D /* 1.png */; };
 		4DE8F93E1C9E918D005BC8C9 /* NSObject+Property.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE8F93D1C9E918D005BC8C9 /* NSObject+Property.m */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +34,13 @@
 		4DDAEE651C9E79040036A302 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4DDAEE6B1C9E792E0036A302 /* Student.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		4DDAEE6C1C9E792E0036A302 /* Student.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
-		4DDAEE6E1C9E82540036A302 /* UIViewController+ImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+ImageView.h"; sourceTree = "<group>"; };
-		4DDAEE6F1C9E82540036A302 /* UIViewController+ImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+ImageView.m"; sourceTree = "<group>"; };
+		4DE5264C1C9F9C290085F12D /* ECGViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGViewController.h; sourceTree = "<group>"; };
+		4DE5264D1C9F9C290085F12D /* ECGViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGViewController.m; sourceTree = "<group>"; };
+		4DE5264F1C9F9C9F0085F12D /* ECGView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ECGView.h; sourceTree = "<group>"; };
+		4DE526501C9F9C9F0085F12D /* ECGView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ECGView.m; sourceTree = "<group>"; };
+		4DE526521C9FC4980085F12D /* UIImageView+BigImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+BigImageView.h"; sourceTree = "<group>"; };
+		4DE526531C9FC4980085F12D /* UIImageView+BigImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+BigImageView.m"; sourceTree = "<group>"; };
+		4DE526551C9FC5B20085F12D /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
 		4DE8F93C1C9E918D005BC8C9 /* NSObject+Property.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Property.h"; sourceTree = "<group>"; };
 		4DE8F93D1C9E918D005BC8C9 /* NSObject+Property.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Property.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -72,8 +80,10 @@
 				4DDAEE721C9E82AE0036A302 /* 显示大图片 */,
 				4DDAEE5A1C9E79040036A302 /* ViewController.h */,
 				4DDAEE5B1C9E79040036A302 /* ViewController.m */,
+				4DE5264B1C9F9BCC0085F12D /* 心电贴 */,
 				4DDAEE571C9E79040036A302 /* AppDelegate.h */,
 				4DDAEE581C9E79040036A302 /* AppDelegate.m */,
+				4DE526551C9FC5B20085F12D /* 1.png */,
 				4DDAEE5D1C9E79040036A302 /* Main.storyboard */,
 				4DDAEE601C9E79040036A302 /* Assets.xcassets */,
 				4DDAEE621C9E79040036A302 /* LaunchScreen.storyboard */,
@@ -103,10 +113,21 @@
 		4DDAEE721C9E82AE0036A302 /* 显示大图片 */ = {
 			isa = PBXGroup;
 			children = (
-				4DDAEE6E1C9E82540036A302 /* UIViewController+ImageView.h */,
-				4DDAEE6F1C9E82540036A302 /* UIViewController+ImageView.m */,
+				4DE526521C9FC4980085F12D /* UIImageView+BigImageView.h */,
+				4DE526531C9FC4980085F12D /* UIImageView+BigImageView.m */,
 			);
 			name = "显示大图片";
+			sourceTree = "<group>";
+		};
+		4DE5264B1C9F9BCC0085F12D /* 心电贴 */ = {
+			isa = PBXGroup;
+			children = (
+				4DE5264C1C9F9C290085F12D /* ECGViewController.h */,
+				4DE5264D1C9F9C290085F12D /* ECGViewController.m */,
+				4DE5264F1C9F9C9F0085F12D /* ECGView.h */,
+				4DE526501C9F9C9F0085F12D /* ECGView.m */,
+			);
+			name = "心电贴";
 			sourceTree = "<group>";
 		};
 		4DE8F93B1C9E912C005BC8C9 /* 能够动态添加属性的NSObjec分类 终极解决方案 */ = {
@@ -176,6 +197,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4DDAEE641C9E79040036A302 /* LaunchScreen.storyboard in Resources */,
+				4DE526561C9FC5B20085F12D /* 1.png in Resources */,
 				4DDAEE611C9E79040036A302 /* Assets.xcassets in Resources */,
 				4DDAEE5F1C9E79040036A302 /* Main.storyboard in Resources */,
 			);
@@ -188,11 +210,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DE5264E1C9F9C290085F12D /* ECGViewController.m in Sources */,
 				4DDAEE5C1C9E79040036A302 /* ViewController.m in Sources */,
-				4DDAEE701C9E82540036A302 /* UIViewController+ImageView.m in Sources */,
 				4DDAEE591C9E79040036A302 /* AppDelegate.m in Sources */,
+				4DE526541C9FC4980085F12D /* UIImageView+BigImageView.m in Sources */,
 				4DDAEE561C9E79040036A302 /* main.m in Sources */,
 				4DE8F93E1C9E918D005BC8C9 /* NSObject+Property.m in Sources */,
+				4DE526511C9F9C9F0085F12D /* ECGView.m in Sources */,
 				4DDAEE6D1C9E792E0036A302 /* Student.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
