@@ -167,6 +167,7 @@
     
     _judgmentInfoLabel.text = model.judgmentInfo;
     _imgView.image = model.judgmentHeader;
+    _timeLabel.text = model.testTime;
 }
 
 @end

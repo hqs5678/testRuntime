@@ -11,8 +11,14 @@
 
 @interface ECGModel : NSObject
 
-
+/**
+ *  测量时长
+ */
 @property (nonatomic,strong) NSString *testDuration;
+/**
+ *  测量时间
+ */
+@property (nonatomic,strong) NSString *testTime;
 @property (nonatomic,strong) NSString *averHr;
 @property (nonatomic,strong) NSString *maxHr;
 @property (nonatomic,strong) NSString *minHr;

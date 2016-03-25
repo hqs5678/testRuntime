@@ -10,7 +10,9 @@
 #import "ECGView.h"
 #import "ECGModel.h"
 
-@implementation ECGViewController
+@implementation ECGViewController{
+    ECGView *eView;
+}
 
 - (void)viewDidLoad{
     [super viewDidLoad];
@@ -21,14 +23,7 @@
     [self setup];
 }
 
-- (void)setup{
-    CGFloat x = 20;
-    CGFloat  y = 40;
-    CGFloat w = self.view.frame.size.width - x * 2;
-    CGFloat h = 400;
-    
-    ECGView *eView  = [[ECGView alloc]initWithFrame:CGRectMake(x, y, w, h )];
-    eView.timeLabel.text = @"2016-02-32 23:23:32";
+- (void)viewDidAppear:(BOOL)animated{
     
     ECGModel *model = [[ECGModel alloc]init];
     model.testDuration = @"20分59秒";
@@ -39,8 +34,19 @@
     model.SVES = @"19次";
     model.judgmentHeader = [UIImage imageNamed:@"indicator.png"];
     model.judgmentInfo = @"您的心脏很健康!!!!!偶像啊 !!!! 但也请您注意保存啊!!!! 但也请您注意保存啊!!! 但也请您注意保存啊!!!";
-    
+    model.testTime = @"2016-02-32 23:23:32";
     eView.model = model;
+     
+}
+
+- (void)setup{
+    CGFloat x = 20;
+    CGFloat  y = 40;
+    CGFloat w = self.view.frame.size.width - x * 2;
+    CGFloat h = 400;
+    
+    eView  = [[ECGView alloc]initWithFrame:CGRectMake(x, y, w, h )];
+   
     
     
     
