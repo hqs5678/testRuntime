@@ -1,5 +1,5 @@
 //
-//  NSObject+Property.swift
+//  Student.swift
 //  testRunTimeSwfit
 //
 //  Created by hqs on 16/3/25.
@@ -8,7 +8,6 @@
 
 import Foundation
 
-extension NSObject{
-    
-    
+class Student: QSObject {
+ 
 }

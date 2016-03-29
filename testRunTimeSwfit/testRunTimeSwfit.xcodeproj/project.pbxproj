@@ -12,7 +12,8 @@
 		4DA1A17E1CA5164600FEDD7B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA1A17C1CA5164600FEDD7B /* Main.storyboard */; };
 		4DA1A1801CA5164600FEDD7B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4DA1A17F1CA5164600FEDD7B /* Assets.xcassets */; };
 		4DA1A1831CA5164600FEDD7B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4DA1A1811CA5164600FEDD7B /* LaunchScreen.storyboard */; };
-		4DA1A18B1CA5169D00FEDD7B /* NSObject+Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1A18A1CA5169D00FEDD7B /* NSObject+Property.swift */; };
+		4DA1A18E1CA51D4C00FEDD7B /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1A18D1CA51D4C00FEDD7B /* Student.swift */; };
+		4DA1A1931CA51FF500FEDD7B /* QSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DA1A1921CA51FF500FEDD7B /* QSObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,7 +24,8 @@
 		4DA1A17F1CA5164600FEDD7B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4DA1A1821CA5164600FEDD7B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4DA1A1841CA5164600FEDD7B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4DA1A18A1CA5169D00FEDD7B /* NSObject+Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+Property.swift"; sourceTree = "<group>"; };
+		4DA1A18D1CA51D4C00FEDD7B /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		4DA1A1921CA51FF500FEDD7B /* QSObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QSObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		4DA1A1771CA5164600FEDD7B /* testRunTimeSwfit */ = {
 			isa = PBXGroup;
 			children = (
+				4DA1A1911CA51FDE00FEDD7B /* NSObject */,
+				4DA1A18C1CA51D1E00FEDD7B /* Student */,
 				4DA1A1781CA5164600FEDD7B /* AppDelegate.swift */,
 				4DA1A17A1CA5164600FEDD7B /* ViewController.swift */,
 				4DA1A17C1CA5164600FEDD7B /* Main.storyboard */,
 				4DA1A17F1CA5164600FEDD7B /* Assets.xcassets */,
 				4DA1A1811CA5164600FEDD7B /* LaunchScreen.storyboard */,
 				4DA1A1841CA5164600FEDD7B /* Info.plist */,
-				4DA1A18A1CA5169D00FEDD7B /* NSObject+Property.swift */,
 			);
 			path = testRunTimeSwfit;
+			sourceTree = "<group>";
+		};
+		4DA1A18C1CA51D1E00FEDD7B /* Student */ = {
+			isa = PBXGroup;
+			children = (
+				4DA1A18D1CA51D4C00FEDD7B /* Student.swift */,
+			);
+			name = Student;
+			sourceTree = "<group>";
+		};
+		4DA1A1911CA51FDE00FEDD7B /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				4DA1A1921CA51FF500FEDD7B /* QSObject.swift */,
+			);
+			name = NSObject;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +157,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4DA1A1931CA51FF500FEDD7B /* QSObject.swift in Sources */,
 				4DA1A17B1CA5164600FEDD7B /* ViewController.swift in Sources */,
 				4DA1A1791CA5164600FEDD7B /* AppDelegate.swift in Sources */,
-				4DA1A18B1CA5169D00FEDD7B /* NSObject+Property.swift in Sources */,
+				4DA1A18E1CA51D4C00FEDD7B /* Student.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,10 +271,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = testRunTimeSwfit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hqs.testRunTimeSwfit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -262,10 +285,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = testRunTimeSwfit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = hqs.testRunTimeSwfit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
